@@ -91,6 +91,7 @@ text-decoration: none;
 font-weight: 500;
 line-height: 24px; /* 150% */
 letter-spacing: 0.32px;
+transition: var(--transition-duration);
 }
 
 .address-contact-item-link{
@@ -172,6 +173,7 @@ color: var(--white);
     font-weight: 500;
     line-height: 24px;
     padding: 16px 32px;
+    transition: var(--transition-duration);
 }
 
 .order-button:hover{
@@ -348,7 +350,6 @@ letter-spacing: 0.32px;
     border-radius: 4px;
 background: var(--ocean);
 box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
-color: var(--cornflower);
 color: var(--white, #FFF);
 text-align: center;
 font-family: Roboto;
@@ -370,6 +371,8 @@ font-size: 16px;
 font-weight: 500;
 padding: 12px 24px;
 letter-spacing: 0.64px;
+line-height: 24px;
+transition: var(--transition-duration);
 
 }
 
@@ -452,6 +455,7 @@ letter-spacing: 0.64px;
     background-color: var(--iris);
     padding: 12px;
     border-radius: 50%;
+    transition: var(--transition-duration);
 }
 
 .cutomer-list-svg{
@@ -491,6 +495,7 @@ letter-spacing: 0.64px;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
+    transition: var(--transition-duration);
 }
 
 .section-customer{
@@ -512,6 +517,7 @@ letter-spacing: 0.64px;
     height: 56px;
     display: block;
     fill: currentColor;
+    transition: var(--transition-duration);
     
 }
 
@@ -526,6 +532,7 @@ letter-spacing: 0.64px;
     padding: 16px 32px;
     border-radius: 4px;
     color: var(--lightslate);
+    transition: var(--transition-duration);
 }
 
 .customer-list-item:hover{
@@ -564,6 +571,7 @@ letter-spacing: 0.64px;
     position: absolute;
     left: 0;
     bottom: -25px;
+    transition: var(--transition-duration);
 }
 
 .nav-list-item:hover .nav-list-item-link::after{
@@ -663,18 +671,26 @@ letter-spacing: 0.64px;
 }
 
 .modal-close{
-    display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
-    border: 0px;
-    border-radius: 50%;
+    background-color: var(--cornflower);
     width: 30px;
     height: 30px;
     position: relative;
     left: 90%;
     top: 24px;
-    
+    border-radius: 50%;
+    padding: 3px;
+    transition: var(--transition-duration);
+}
+
+.close-button-icon{
+    height: 24px;
+    width: 24px;
+}
+
+.modal-close:hover{
+    stroke: currentColor;
 }
 
 .modal.is-hidden{
