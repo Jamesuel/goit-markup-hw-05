@@ -91,6 +91,10 @@ text-decoration: none;
     position: relative;
 }
 
+.nav-list-item-link.active{
+    color: var(--ocean);
+}
+
 .nav-list-item-link{
     text-decoration: none;
     color: var(--navyblue);
@@ -581,6 +585,10 @@ transition: var(--transition-duration);
     left: 0;
     bottom: -25px;
     transition: var(--transition-duration);
+}
+
+.nav-list-item-link.active::after{
+    width: 100%;
 }
 
 .nav-list-item:hover .nav-list-item-link::after{
